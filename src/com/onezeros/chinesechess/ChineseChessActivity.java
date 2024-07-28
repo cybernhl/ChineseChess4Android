@@ -24,11 +24,10 @@
  */
 package com.onezeros.chinesechess;
 
-import cn.domob.android.ads.DomobAdView;
-import cn.domob.android.ads.DomobUpdater;
-
-import com.android.chinesechess.R;
-import com.umeng.analytics.MobclickAgent;
+//import cn.domob.android.ads.DomobAdView;
+//import cn.domob.android.ads.DomobUpdater;
+//
+//import com.umeng.analytics.MobclickAgent;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -88,12 +87,12 @@ public class ChineseChessActivity extends Activity {
 			}
 		});
         
-        // domob ad
-        LinearLayout layout = (LinearLayout)findViewById(R.id.AdLinearLayout);
-        DomobAdView adView = new DomobAdView(this,DOMOB_PUBLISHER_ID_STRING,DomobAdView.INLINE_SIZE_320X50);
-        layout.addView(adView);
-        
-        DomobUpdater.checkUpdate(this, DOMOB_PUBLISHER_ID_STRING);
+        //// domob ad
+//        LinearLayout layout = (LinearLayout)findViewById(R.id.AdLinearLayout);
+//        DomobAdView adView = new DomobAdView(this,DOMOB_PUBLISHER_ID_STRING,DomobAdView.INLINE_SIZE_320X50);
+//        layout.addView(adView);
+//
+//        DomobUpdater.checkUpdate(this, DOMOB_PUBLISHER_ID_STRING);
     }
 
     void switchViewTo(View v) {
@@ -117,14 +116,14 @@ public class ChineseChessActivity extends Activity {
 	@Override
 	protected void onPause() {
 		super.onPause();
-		MobclickAgent.onPause(this);
+//		MobclickAgent.onPause(this);
 		mChessboardView.saveGameStatus();
 	}
 
 	@Override
 	protected void onResume() {		
 		super.onResume();
-		MobclickAgent.onResume(this);
+//		MobclickAgent.onResume(this);
 	}
     @Override
 	public boolean onCreateOptionsMenu(Menu menu) {

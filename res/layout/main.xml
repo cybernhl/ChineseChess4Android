@@ -30,7 +30,8 @@
 		    android:id="@+id/AdLinearLayout" 
 		    android:layout_width="fill_parent" 
 		    android:layout_height="wrap_content"
-		    android:layout_below="@id/chessboard"/>
+		    android:layout_below="@id/chessboard"
+			android:orientation="horizontal" />
 	
     </RelativeLayout>
 
